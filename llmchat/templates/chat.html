@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+</head>
+<body>
+    <h1>Chatbot</h1>
+    <form method="post">
+        <select name="sender_name">
+            <option value="Dubey">Dubey</option>
+            <option value="Vijay Pune">Vijay Pune</option>
+            <option value="RAVISH RANA">RAVISH RANA</option>
+            <option value="Faraz">Faraz</option>
+            <option value="Karan Gupta">Karan Gupta</option>
+            <option value="Saurabh Dasgupta">Saurabh Dasgupta</option>
+            <option value="Shashank Purohit">Shashank Purohit</option>
+        </select>
+        <input type="text" name="user_message" placeholder="Type your message">
+        <input type="submit" value="Send">
+    </form>
+
+    <h2>Your Message:</h2>
+    <p>{{ sender_name }}: {{ user_message }}</p>
+
+    <h2>Chatbot Response:</h2>
+    {% for message in chat_output.split('\n')%}
+        <p>{{ message }}</p>
+    {% endfor %}
+</body>
+</html>

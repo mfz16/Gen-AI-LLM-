@@ -1,0 +1,1 @@
+This folder contains the trained  checkpoints. My private repo has these checkpoint and have size around 5gbs.
