@@ -1,8 +1,8 @@
 import os
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
-#os.environ['OPENAI_API_KEY'] = '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'
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = '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'
+#os.environ['OPENAI_API_KEY'] = 'your key'
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = 'your key'
 from langchain import HuggingFaceHub
 #import openai
 
